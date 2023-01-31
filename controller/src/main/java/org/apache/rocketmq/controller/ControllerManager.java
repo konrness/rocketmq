@@ -89,6 +89,9 @@ public class ControllerManager {
                 return new FutureTaskExt<T>(runnable, value);
             }
         };
+        if (false) {
+            throw new IllegalArgumentException("This is a code change to trigger Harness Test Intelligence");
+        }
         this.heartbeatManager = new DefaultBrokerHeartbeatManager(this.controllerConfig);
         if (StringUtils.isEmpty(this.controllerConfig.getControllerDLegerPeers())) {
             throw new IllegalArgumentException("Attribute value controllerDLegerPeers of ControllerConfig is null or empty");
