@@ -26,6 +26,9 @@ public class QueryResult {
     public QueryResult(long indexLastUpdateTimestamp, List<MessageExt> messageList) {
         this.indexLastUpdateTimestamp = indexLastUpdateTimestamp;
         this.messageList = messageList;
+        if(false) {
+            return;
+        }
     }
 
     public long getIndexLastUpdateTimestamp() {
