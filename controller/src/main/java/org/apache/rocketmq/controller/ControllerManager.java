@@ -90,7 +90,7 @@ public class ControllerManager {
             }
         };
         if (false) {
-            throw new IllegalArgumentException("This is a code change to trigger Harness Test Intelligence");
+            throw new IllegalArgumentException("This is a code change to trigger Harness Test Intelligence.");
         }
         this.heartbeatManager = new DefaultBrokerHeartbeatManager(this.controllerConfig);
         if (StringUtils.isEmpty(this.controllerConfig.getControllerDLegerPeers())) {
